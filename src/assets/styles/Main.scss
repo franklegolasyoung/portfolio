@@ -78,6 +78,31 @@
     padding-bottom: 30%;
 }
 
+.about-detail {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  font-size: 1.25rem;
+  line-height: 2;
+  background: rgba(255,255,255,0.8);
+  border-radius: 12px;
+  padding: 32px 36px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+
+.dark-mode .about-detail {
+  color: #fff;
+  background: rgba(30, 30, 30, 0.85); // 可选，更深的灰色背景
+}
+
+.dark-mode .about-detail a {
+  color: #a084ee; // 邮箱等链接在暗色下更易读
+}
+
+.about-detail a {
+  color: #7648f4; // 邮箱等链接在暗色下更易读
+}
+
+
 @media screen {
     @media (max-width: 567px) {
         .nav-left{

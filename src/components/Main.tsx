@@ -13,9 +13,6 @@ function Main() {
           <div className="image-wrapper">
             <img src={avatar} alt="Avatar" />
           </div>
-          <div className="profile-views">
-            <img src="https://komarev.com/ghpvc/?username=franklegolasyoung&label=Profile%20views&base=3097&color=blue&style=for-the-badge" alt="Visitors" />
-          </div>
         </div>
         <div className="content">
           <div className="social_icons">
@@ -24,16 +21,22 @@ function Main() {
           </div>
           <h1>Zhuochen Yang</h1>
           <p>Cyber Security Research Engineer</p>
-          <div className="about-detail">
-            <p>
-              ABOUT MEEEEEEEEEEEEEEEE
-            </p>
-          </div>
           <div className="mobile_social_icons">
             <a href="https://github.com/franklegolasyoung" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/zhuochenyang/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
         </div>
+      </div>
+      <div className="about-detail">
+        <p>
+          I am a Singapore-based Cyber Security Research Engineer specializing in LLM Security and Safety, holding a Master of Science in Artificial Intelligence from Nanyang Technological University.
+        </p>
+        <p>
+          Complementing my core expertise in AI and cybersecurity, I actively develop full-stack applications and operate a freelance photography practice, blending technical precision with creative vision to deliver innovative solutions across technology and visual arts domains.
+        </p>
+        <p>
+          Reachable at <a href="mailto:frankyoung@outlook.sg">frankyoung@outlook.sg</a> for collaborative opportunities.
+        </p>
       </div>
     </div>
   );

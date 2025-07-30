@@ -4,7 +4,7 @@ import Giscus from '@giscus/react';
 function GiscusBoard({ theme }: { theme: string }) {
   return (
     <div id="giscus-board" className="items-container">
-      <h2>Message Board</h2>
+      <h1>Message Board</h1>
       <Giscus
         repo="franklegolasyoung/portfolio"
         repoId="R_kgDOPVHv-Q"
@@ -17,7 +17,6 @@ function GiscusBoard({ theme }: { theme: string }) {
         inputPosition="top"
         theme={theme}
         lang="en"
-        loading="lazy"
       />
     </div>
   );

@@ -1,26 +1,99 @@
 #certificates {
-  margin: 40px auto;
-  padding: 32px 24px;
-  background: var(--section-bg, #fff);
-  border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-  max-width: 700px;
+  margin: 40px 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  scroll-margin-top: 100px; // 100px 可根据你的导航高度调整
 
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 24px;
-    color: var(--primary, #5000ca);
+  h1 {
+    // font-size: 2rem;
+    // margin-bottom: 32px;
+    // color: var(--primary, #5000ca);
     text-align: center;
   }
 
-  ul {
-    list-style: disc inside;
-    padding-left: 0;
+  .certificates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;        // 左右内边距
+  }
+
+  .certificate-card {
+    background: #f7f7fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(80,0,202,0.06);
+    flex: 1 1 30%; // 1/3宽度
+    min-width: 280px;
+    max-width: 400px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    text-align: center;
+    &:hover {
+      box-shadow: 0 4px 16px rgba(80,0,202,0.13);
+      transform: translateY(-4px) scale(1.03);
+    }
+  }
+
+  .cert-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;         // 外圈大小
+    height: 48px;
+    border-radius: 50%;
+    background: #5000ca;
+    color: #5000ca;
+    margin: 0 auto 12px auto;
+    // 这里不设置 font-size，交给内部 svg 控制
+  }
+  .cert-icon svg {
+    font-size: 1.4rem;   // 图标本身更小
+  }
+
+  .cert-title {
+    font-weight: 600;
     font-size: 1.1rem;
     color: #222;
-    li {
-      margin-bottom: 12px;
-      line-height: 1.7;
-    }
+  }
+
+  .cert-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .cert-year {
+    font-size: 0.95rem;
+    color: #aaa;
+    margin-top: 4px;
+  }
+}
+
+// 响应式：小屏时每行1~2个
+@media (max-width: 900px) {
+  #certificates .certificate-card {
+    flex: 1 1 45%; // 1/2宽度
+    min-width: 220px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #certificates .certificates-grid {
+    gap: 16px;
+  }
+  #certificates .certificate-card {
+    flex: 1 1 100%;
+    min-width: 0;
+    height: 140px;
   }
 }
