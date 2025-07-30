@@ -2,19 +2,34 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+
+.profile-views {
+  margin: 16px 0;
+  text-align: center;
+  img {
+    vertical-align: middle;
+  }
+}
+
 .about-section {
-    display: flex;
-    gap: 30px;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding: 0px 15%;
-    min-height: 700px;
-    background-image: url("../images/bg-dark.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0px 15%;
+  min-height: 700px;
+  background-image: url("../images/bg-dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.avatar-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-section .content {

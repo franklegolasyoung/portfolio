@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
+import LinearProgress from '@mui/material/LinearProgress';
 
 const labelsFirst = [
     "React",
@@ -56,6 +57,7 @@ function Expertise() {
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
+                        {/* <LinearProgress variant="determinate" value={90} /> */}
                     </div>
                 </div>
 
@@ -68,6 +70,7 @@ function Expertise() {
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
+                        {/* <LinearProgress variant="determinate" value={80} /> */}
                     </div>
                 </div>
 
