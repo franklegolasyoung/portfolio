@@ -17,7 +17,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['Career', 'history'], ['Projects', 'projects'], ['Message Board', 'giscus-board'], ['Contact', 'contact']];
+const navItems = [['Home', '#'], ['Expertise', 'expertise'], ['Career', 'history'], ['Projects', 'projects'], ['Message Board', 'giscus-board'], ['Contact', 'contact']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -47,6 +47,11 @@ function Navigation({parentToChild, modeChange}: any) {
   }, []);
 
   const scrollToSection = (section: string) => {
+    // 如果是Home按钮，跳转到主页
+    if (section === '#') {
+      window.location.href = '../';
+      return;
+    }
     console.log(section)
     const expertiseElement = document.getElementById(section);
     if (expertiseElement) {
