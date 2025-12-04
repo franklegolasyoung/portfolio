@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -15,8 +16,14 @@ function Contact() {
   const [nameError, setNameError] = useState<boolean>(false);
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
+  const [recaptchaToken, setRecaptchaToken] = useState<string>('');
 
   const form = useRef();
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
+  const handleRecaptchaChange = (token: string | null) => {
+    setRecaptchaToken(token || '');
+  };
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -25,28 +32,37 @@ function Contact() {
     setEmailError(email === '');
     setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS */
+    if (!recaptchaToken) {
+      alert('Please complete the reCAPTCHA verification');
+      return;
+    }
 
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
+    if (name !== '' && email !== '' && message !== '') {
+      var templateParams = {
+        name: name,
+        email: email,
+        message: message,
+        'g-recaptcha-response': recaptchaToken
+      };
 
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+      console.log(templateParams);
+      emailjs.send('service_3twdyz9', 'template_554cqjg', templateParams, '-MUHXq1IRPep8NK80').then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Message sent successfully! I will get back to you soon.');
+          setName('');
+          setEmail('');
+          setMessage('');
+          setRecaptchaToken('');
+          recaptchaRef.current?.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error);
+          alert('Failed to send message. Please try again or contact me directly.');
+          recaptchaRef.current?.reset();
+        },
+      );
+    }
   };
 
   return (
@@ -103,9 +119,18 @@ function Contact() {
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
-              Send
-            </Button>
+            <div className="form-submit-row">
+              <div className="recaptcha-container">
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="6Ldc4SAsAAAAAKoAw7iOehR3ZKFwQRAIh03fkEcC"
+                  onChange={handleRecaptchaChange}
+                />
+              </div>
+              <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
+                Send
+              </Button>
+            </div>
           </Box>
         </div>
       </div>

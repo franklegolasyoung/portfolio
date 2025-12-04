@@ -1,14 +1,8 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import chatlah from '../assets/images/chatlah.png';
+import pixcloud from '../assets/images/pixcloud.jpg';
+import zotero from '../assets/images/zotero.png';
+
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -17,14 +11,19 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.pixcloud.cc/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.pixcloud.cc/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
+                <a href="https://www.pixcloud.cc/" target="_blank" rel="noreferrer"><img src={pixcloud} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://www.pixcloud.cc/" target="_blank" rel="noreferrer"><h2>PixCloud</h2></a>
+                <p>Developed Image Storage, Sharing, and Cooperation Platform, built with Spring Boot, Vue 3, MySQL, Redis, AWS, COS Storage, CDN Acceleration</p>
             </div>
             <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
-                <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
+                <a href="https://www.chatlah.cc" target="_blank" rel="noreferrer"><img src={chatlah} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://www.chatlah.cc" target="_blank" rel="noreferrer"><h2>ChatLah</h2></a>
+                <p>Developed and released a LLM Agent chatbot platform, integrated with multiple MCP providers and personalized RAG knowledge base.</p>
+            </div>
+            <div className="project">
+                <a href="https://github.com/franklegolasyoung/zotero-snap" target="_blank" rel="noreferrer"><img src={zotero} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/franklegolasyoung/zotero-snap" target="_blank" rel="noreferrer"><h2>Zotero Snap</h2></a>
+                <p>Developed and worked as key maintainer and contributor to a Linux Snap Store extension for Zotero, enabling users to install and control Zotero in Linux Environment more conveniently.</p>
             </div>
         </div>
     </div>

@@ -25,6 +25,8 @@
   }
 
   .certificate-card {
+    padding: 20px; // 你可以根据需要调整数值
+    box-sizing: border-box;
     background: #f7f7fa;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(80,0,202,0.06);
@@ -56,6 +58,8 @@
     color: #5000ca;
     margin: 0 auto 12px auto;
     // 这里不设置 font-size，交给内部 svg 控制
+    flex-shrink: 0; // 防止被压缩
+    overflow: hidden; // 防止内容撑破圆形
   }
   .cert-icon svg {
     font-size: 1.4rem;   // 图标本身更小

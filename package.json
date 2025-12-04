@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://franklegolasyoung.github.io/portfolio",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
@@ -22,6 +23,7 @@
     "@types/react-dom": "^18.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
     "react-scripts": "5.0.1",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.77.4",
@@ -55,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-google-recaptcha": "^2.1.9",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "gh-pages": "^6.3.0"
   }

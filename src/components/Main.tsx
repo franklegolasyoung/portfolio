@@ -1,6 +1,7 @@
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import '../assets/styles/Main.scss';
 import avatar from '../assets/images/1739957414629.jpeg';
 
@@ -18,12 +19,14 @@ function Main() {
           <div className="social_icons">
             <a href="https://github.com/franklegolasyoung" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/zhuochenyang/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://medium.com/@frank1045325433" target="_blank" rel="noreferrer"><MenuBookIcon/></a>
           </div>
           <h1>Zhuochen Yang</h1>
           <p>Cyber Security Research Engineer</p>
           <div className="mobile_social_icons">
             <a href="https://github.com/franklegolasyoung" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/zhuochenyang/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://medium.com/@frank1045325433" target="_blank" rel="noreferrer"><MenuBookIcon/></a>
           </div>
         </div>
       </div>

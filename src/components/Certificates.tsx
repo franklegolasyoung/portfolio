@@ -6,22 +6,52 @@ import { faTrophy, faCloud, faAward } from '@fortawesome/free-solid-svg-icons';
 
 const certificates = [
   {
-    title: "Alibaba Cloud Security Challenge",
-    subtitle: "Third Prize",
+    title: "Oracle AI Vector Search Certified Professional",
+    subtitle: "",
     icon: faTrophy,
-    year: "2023"
+    year: "2025"
   },
   {
-    title: "Google Professional Cloud Architect",
+    title: "NVIDIA: Building RAG Agents with LLMs",
     subtitle: "",
     icon: faCloud,
-    year: "2022"
+    year: "2025"
   },
   {
-    title: "CCF Excellent Student Award",
+    title: "Microsoft: Career Essentials in Cyber Security",
+    subtitle: "",
+    icon: faCloud,
+    year: "2024"
+  },
+  {
+    title: "Imperial College London: Mathematics for Machine Learning",
+    subtitle: "",
+    icon: faTrophy,
+    year: "2021"
+  },
+  {
+    title: "Stanford University: Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
+    subtitle: "",
+    icon: faTrophy,
+    year: "2021"
+  },
+  {
+    title: "Academic Scholarship from Harbin Institute of Technology",
     subtitle: "",
     icon: faAward,
-    year: "2021"
+    year: "2020"
+  },
+  {
+    title: "Individual Scholarship from Harbin Institute of Technology",
+    subtitle: "",
+    icon: faAward,
+    year: "2019"
+  },
+  {
+    title: "Community Work Scholarship from Harbin Institute of Technology",
+    subtitle: "",
+    icon: faAward,
+    year: "2019"
   }
 ];
 
@@ -46,3 +76,4 @@ function Certificates() {
 }
 
 export default Certificates;
+
