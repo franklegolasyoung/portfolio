@@ -3,7 +3,6 @@ import {
   Main,
   Timeline,
   Expertise,
-  Certificates,
   Project,
   Contact,
   Navigation,
@@ -47,7 +46,6 @@ function App() {
             <Main/>
             <Expertise/>
             <Timeline/>
-            <Certificates/>
             <Project/>
             <GiscusBoard theme={mode === 'dark' ? 'dark' : 'light'} />
             <Contact/>

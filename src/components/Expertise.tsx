@@ -7,39 +7,43 @@ import '../assets/styles/Expertise.scss';
 import LinearProgress from '@mui/material/LinearProgress';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
     "Python",
-    "SQL",
+    "Java",
+    "C++",
+    "Spring Boot",
+    "Vue.js",
+    "Flask",
+    "FastAPI",
     "PostgreSQL",
-    "Postman"
+    "MySQL",
+    "ElasticSearch",
+    "Redis"
 ];
 
 const labelsSecond = [
+    "Docker",
+    "Nginx",
+    "Kafka",
+    "RabbitMQ",
     "Git",
     "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
+    "AWS EC2",
+    "AWS RDS",
+    "GCP",
     "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "CI/CD"
 ];
 
 const labelsThird = [
+    "PyTorch",
+    "LangGraph",
+    "RAG",
+    "LLM",
+    "Agents",
+    "MCP",
     "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
     "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "LLM Security"
 ];
 
 function Expertise() {
@@ -50,8 +54,8 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <h3>Full Stack Development</h3>
+                    <p>Experienced in building scalable web applications using Spring Boot, Flask, and FastAPI. Proficient in both frontend (React, TypeScript) and backend development with a strong understanding of RESTful APIs and microservices architecture.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -63,8 +67,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <h3>DevOps & Cloud Infrastructure</h3>
+                    <p>Skilled in containerization, orchestration, and cloud deployment. Experience with Docker, Kafka, RocketMQ for distributed systems, and CI/CD pipelines using GitHub Actions on AWS and GCP platforms.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -76,8 +80,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Building intelligent applications with LLMs, RAG systems, and AI agents. Hands-on experience with PyTorch, LangGraph, and Model Context Protocol (MCP) for creating context-aware AI solutions.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
