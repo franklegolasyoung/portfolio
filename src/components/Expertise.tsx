@@ -67,7 +67,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>DevOps & Cloud Infrastructure</h3>
-                    <p>Skilled in containerization, orchestration, and cloud deployment. Experience with Docker, Kafka, RocketMQ for distributed systems, and CI/CD pipelines using GitHub Actions on AWS and GCP platforms.</p>
+                    <p>Skilled in containerization, orchestration, and cloud deployment. Experience with Docker, Kafka, RabbitMQ for distributed systems, and CI/CD pipelines using GitHub Actions on AWS and GCP platforms.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
