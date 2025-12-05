@@ -22,7 +22,7 @@ function Main() {
             <a href="https://medium.com/@frank1045325433" target="_blank" rel="noreferrer"><MenuBookIcon/></a>
           </div>
           <h1>Zhuochen Yang</h1>
-          <p>Cyber Security Research Engineer</p>
+          <p>AI Engineer (Security)</p>
           <div className="mobile_social_icons">
             <a href="https://github.com/franklegolasyoung" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/zhuochenyang/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
@@ -32,7 +32,7 @@ function Main() {
       </div>
       <div className="about-detail">
         <p>
-          I am a Singapore-based Cyber Security Research Engineer specializing in LLM Security and Safety, holding a Master of Science in Artificial Intelligence from Nanyang Technological University.
+          I am a Singapore-based AI Engineer specializing in LLM Security and Safety, holding a Master of Science in Artificial Intelligence from Nanyang Technological University.
         </p>
         <p>
           Complementing my core expertise in AI and cybersecurity, I actively develop full-stack applications and operate a freelance photography practice, blending technical precision with creative vision to deliver innovative solutions across technology and visual arts domains.

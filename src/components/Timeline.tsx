@@ -20,7 +20,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Cyber Security Research Engineer</h3>
+            <h3 className="vertical-timeline-element-title">AI Engineer (Security)</h3>
             <h4 className="vertical-timeline-element-subtitle">Singapore</h4>
             <p>
               Research Projects, GenAI/LLM, Privacy Attack/Defense, Vulnerability Research
@@ -34,7 +34,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full-stack Developer</h3>
+            <h3 className="vertical-timeline-element-title">Full-stack Self-motivated Developer</h3>
             <h4 className="vertical-timeline-element-subtitle">Singapore</h4>
             <p>
               Full-stack Web Development, GenAI/LLM, LangChain, Spring Boot, MySQL, Docker, Python, Nginx
